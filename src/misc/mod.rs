@@ -1,0 +1,1 @@
+pub mod vc_icon;

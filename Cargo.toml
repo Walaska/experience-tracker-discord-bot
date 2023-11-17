@@ -1,0 +1,27 @@
+[package]
+name = "bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "*"
+tracing = "*"
+tracing-subscriber = "*"
+lazy_static = "*"
+humantime = "*"
+mongodb = "*"
+async-recursion = "*"
+rand = "*"
+chrono = "*"
+
+[dependencies.tokio]
+version = "*"
+features = ["macros", "signal", "rt-multi-thread", "time"]
+
+[dependencies.serenity]
+version = "*"
+features = ["cache", "framework", "standard_framework", "rustls_backend", "model", "collector"]
+
+[dependencies.bson]
+version = "*"
+feature = ["chrono-0_4"]
